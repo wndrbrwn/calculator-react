@@ -12,9 +12,9 @@ const Calculator = () => {
   const [operator, setOperator] = useState("");
 
   return (
-    <div className="bg-gray-300 p-4 shadow-md">
+    <div className="bg-gray-300 shadow-md">
       <Result result={result} />
-      <div className="grid grid-cols-4 gap-2 mt-4">
+      <div className="grid grid-cols-4 ">
         <ButtonNumber name="1" result={result} setResult={setResult} />
         <ButtonNumber name="2" result={result} setResult={setResult} />
         <ButtonNumber name="3" result={result} setResult={setResult} />
@@ -46,7 +46,7 @@ const Calculator = () => {
           setOperator={setOperator}
         />
         <ButtonEnter
-          name="Enter"
+          name="Ent"
           operator={operator}
           result={result}
           setResult={setResult}
