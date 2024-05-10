@@ -11,7 +11,8 @@ const ButtonNumber = ({ name, result, setResult }) => {
     }
   };
 
-  return <Button onClickButton={onClickButton} />;
+  return <Button name={name} onClickButton={onClickButton} />;
 };
 
 export default ButtonNumber;
+
